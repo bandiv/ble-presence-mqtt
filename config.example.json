@@ -1,0 +1,28 @@
+{
+  "room": "office",
+  "adapter": "hci0",
+  "mqtt": {
+    "host": "localhost",
+    "port": 1883,
+    "username": "",
+    "password": "",
+    "client_id": "blepresence",
+    "base_topic": "ble_presence",
+    "discovery_prefix": "homeassistant"
+  },
+  "thresholds": {
+    "rssi_min": -83,
+    "arrive_sightings": 2,
+    "arrive_window_s": 30,
+    "away_after_s": 120
+  },
+  "beacons": [
+    {
+      "id": "my_phone",
+      "name": "My phone",
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "major": 100,
+      "minor": 1
+    }
+  ]
+}
